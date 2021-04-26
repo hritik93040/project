@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html forms</title>
+</head>
+<body>
+	<style>
+		.ritik{
+			
+			width: 50%;
+		
+		 border: 8px solid green;
+			margin-left: 350px;
+			padding: 20px;
+			border-radius: 28px;
+			font-family: verdana;
+		}
+
+
+
+
+	</style>
+
+	
+	<h1 style="color: blue; text-align: center;">SCHOLARSHIP FORMS 2020</h1>
+	<div class="ritik">
+	<form  action="/action_page.php">
+		<label for="yname">Your Name:</label><br>
+		<input type="text" name="yname" id="yname" placeholder="enter your name..." size="50" required><br><br>
+		<label for="fname">Father's Name:</label><br>
+		<input type="text" name="fname" id="fname" placeholder="type here..." size="50" required><br><br>
+		<label for="roll">Rollno:</label>
+		<input type="text" name="roll" id="roll" placeholder="type here..." size="30" pattern="[0-15]{15}" maxlength="15" required><br><br> 
+	<label for="gender">Gender:</label><br>
+	<input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+  <label for="mobile">Mobile no:</label><br>
+  <input type="digits" name="mobile" id="mobile" placeholder="type here..." size="30"  maxlength="10" required><br><br>
+  
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" placeholder="enter your email ID... " required><br><br>
+  <label for="income">Annual Income:</label><br><br>
+  <input type="text" name="income" id="income" placeholder="type here..." size="40" required><br><br>
+  <label for="address">Address:</label><br><br>
+  <textarea name="message" rows="3" cols="40" placeholder="enter your premanent address..." required></textarea><br><br>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" required><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd" required><br><br>
+  	<label for="religion">Religion:</label><br>
+  	<input type="text" name="religion" id="religion" placeholder="type here..." size="30" required><br><br>
+  	<label for="caste">Caste:</label><br>
+  	<input list="caste" name="caste">
+  <datalist id="caste">
+  	<option value="general"></option>
+  	<option value="BC1"></option>
+  	<option value="BC2"></option>
+  	<option value="EBC"></option>
+  	<option value="SC"></option>
+  	<option value="ST"></option>
+  	</datalist><br><br>
+  	<label for="belonging">Belonging to...</label><br><br>
+  	 <input type="checkbox" id="vehicle1" name="vehicle1" value="Urban">
+  	 <label for="vehicle1">Urban </label>
+  	 <input type="checkbox" id="vehicle1" name="vehicle1" value="Rural">
+  	 <label for="vehicle1">Rural </label><br><br>
+  	 <input type="submit" value="Submit">
+</form> 
+</div>
+</body>
+</html>
+
